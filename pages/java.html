@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="ce site contient des informations qui concerne le html css et java"/>
+  <meta name="Keywords" content="css,html,java,formation,balises"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Document java</title>
+ <link rel="icon" href="../img/icon.png" >
+ <link rel="stylesheet" href="../css/style2.css">
+ <!-- <link rel="stylesheet" href="../css/style.css"> -->
+ <style>
+     
+
+
+      @font-face {
+         font-family:Klik-light ;
+         src: url(../police/Klik-Light.ttf);
+      }
+      @font-face {
+         font-family: ReplayTime;
+         src: url(../police/ReplayTime.ttf);
+      }
+      @font-face {
+         font-family:Natural ;
+         src: url(../police/Natural.ttf);
+      }
+      @font-face{
+         font-family:Alexanna;
+         src:url(../police/Alexanna.ttf)
+      }
+     @font-face{
+         font-family:Heart Blues;
+         src:url(../police/Heart\ Blues.ttf)
+     }
+ </style>
+  <script src="https://kit.fontawesome.com/09bcc4c836.js" crossorigin="anonymous"></script>
+ </head>
+
+    <header class="header">
+ 
+  
+        <img src="../img/logo2.png" alt="logo"> 
+ 
+        <nav class="navbar">
+        
+           <a href="../home.html" class="link">home</a>
+           <a href="html.html" class="link">Html</a>
+           <a href="css.html" class="link">Css</a>
+           <a href="java.html" class="javascript-nav">JavaScript</a>
+          
+           <a href="../contact.html">contact</a>
+        </nav>
+     
+       
+     
+     </header>
+
+
+
+
+ <section class="heading-link">
+<h1 class="link">Apprendre JavaScript</h1>
+<a href="../home.html">Home</a>/
+<a href="#">Java</a>
+
+
+
+
+</section>
+ 
+
+<section>
+<!-- <div>
+<h1>Sommaire </h1>
+<ol type="I"> 
+<li>
+    Le langage Javascript</li>
+<li>Le modèle objet du navigateur</li>
+<li>Application au contrôle de saisie des
+    données</li>
+    </ol>
+</div> -->
+<section class="container1">
+    <div class="titre">
+<h1 > Le langage Javascript</h1>
+<img src="../img/JavaScript frameworks-rafiki.svg" alt="im2">
+       </div>
+<div class="paragraphe">
+    <div class="titre2">
+   <h2> Ecriture de code Javascript</h2> 
+       <div class="con">
+           <div class="p1">
+       <h3>Format général d’un programme</h3>
+      <p>La particularité du langage Javascript par rapport à d’autres langage de programmation (tels que Java
+        ou C++), est sa faculté d’intégration dans une page HTML. Ainsi, le code écrit dans une page HTML est
+        directement interprété par le navigateur, qui exécute les instructions Javascript.
+        Un "programme" Javascript est composé d’une série d’intructions que le navigateur va exécuter
+        séquentiellement, c’est à dire l’une après l’autre. Chaque instruction est terminé par un point virgule.
+        </p>
+        <h4>voir l'exemple</h4>
+        <img src="../img/exp1j.png" alt="exemple1">
+        <h3>Intégration dans une page HTML</h3>
+        <p>Comme nous l’avons déjà souligné, le langage Javascript a été crée pour être exécuté sur un navigateur
+            Internet. Il doit donc s’intégrer dans le code HTML. Nous avons à notre disposition une balise HTML
+            particulière :
+            </p>
+            <h4>voir l'exemple</h4>
+            <img src="../img/exp2j.png" alt="exemple2">
+            <p>Il existe trois manière d’intégrer le code Javascript dans le code HTML :</p>
+            <h4>Intégration pour exécution directe</h4>
+            <p>Par cette méthode, le code est directement exécuté au chargement de la page. La balise <script></script>
+                est placé entre les balises <body></body>, et le navigateur exécute le programme, avant même l’affichage
+                de la page HTML.</p>
+                <h4>voir l'exemple</h4>
+                <img src="../img/exp3j.png" alt="exemple3">
+             <h4>Exécution différée</h4>
+             <p>Cette fois ci, le code est d’abord lu par le navigateur, et stocké en mémoire. Il ne s’exécutera que sur
+                demande, c’est à dire lors d’un évènement généré par l’intervention de l’utilisateur.
+                Nous reviendrons plus tard sur ces évènements et la manière de les gérer</p>
+                <h4>voir l'exemple</h4>
+                <img src="../img/exp4j.png" alt="exemple4">
+            </div>
+            <div class="p1">
+               <h4> Insertion de code JavaScript à l’intérieur d’une balise HTML</h4>
+                <p>Nous verrons dans la partie suivante de ce cours que certaines balises HTML acceptent de réagir à
+                    des événements, provoqués soit par l’intervention de l’utilisateur, soit par une action du navigateur lui
+                    même, comme le chargement de la page HTML (événement onLoad) ou la fermeture de la page HTML
+                    en cours (événement onUnload).
+                    Dans ce cas, le code JavaScript peut être aussi inséré directement au niveau de la balise en question.
+                    Le squelette de la page HTML est alors :</p>
+                 <h4>voir l'exemple</h4>
+                    <img src="../img/exp6j.png" alt="exemple6">
+        <h3>Insertion de code par appel de module externe</h3>
+                       <p>Dans les paragraphes précédent, nous avons inséré le code Javascript directement dans la page HTML.
+                        C’est la méthode la plus simple et la plus fréquemment utilisée dans la création de sites Internets.
+                        Cependant, cette méthode trouve ses limites dans la réutilisation et la maintenance des fonctions. En
+                        effet, si vous utilisez souvent une même série d’intructions Javascript dans plusieurs pages HTML, et
+                        que vous souhaitez les modifier, vous devrez reprendre une par une l’ensemble des pages ... ce qui peut
+                        rapidement devenir fastidieux.
+                        Une solution à ces problèmes est de placer des fonctions Javascript dans un module externe. Ce
+                        fichier contiendra le code source, et l’insertion dans la page HTML deviendra :</p>    
+                        <h4>voir l'exemple</h4>     
+                   <img src="../img/exp8j.png" alt="exemple8">
+                         <p>Ces balises indiquent au navigateur non plus la nature du code qu’il doit utiliser, mais l’emplacement
+                            auquel il trouvera ce code. Ainsi, en modifiant le contenu du module externe, on modifiera le comportement de l’ensemble des pages qui s’y réfèren</p>
+                        <h4>Rédaction du module externe</h4>
+                        <p>Le module externe doit être écrit au format texte simple, et portant l’extension .txt. Il doit être placé à
+                            son adresse d’appel. Il contient le code source Javascript, généralement écrit sous forme de fonctions.
+                            Travail à faire : créer un module externe nommé mod_jvs1.txt, et le placer dans le répertoire
+                            /javascript/exercices/modules/. Y insérer le code de deux fonctions, similaires à la fonction
+                            affiche() vue dans les exercices précédents :
+                            • affiche1() : ouvre une boite de dialogue affichant "Execution de la fonction 1"
+                            affiche2() : ouvre une boite de dialogue affichant "Execution de la fonction 2"</p>
+                            </div>
+                            </div>
+   </div>
+   <div class="titre2">
+ <h2> Structure du langage</h2> 
+ <div class="con">
+     <div class="p1">
+        <p>Nous avons vu dans les paragraphes précédents quelques aperçus du langage Javascript, comme les
+            fonctions, les instructions ou les blocs. Dans cette partie du cours, nous allons nous intéresser plus
+            précisément à la syntaxe générale du langage, et à quelques unes de ses instructions et fonctions clefs.
+            </p>
+             <h3> Blocs et instructions</h3>
+            <p>Une instructions Javascript peut être vue comme un ordre passé à l’interpréteur du navigateur. Chaque
+                instruction se termine par un point-vrigule.
+                Un bloc d’instructions est une série d’instructions exécutées séquentiellement, et encadré par des
+                accolades. Les blocs d’instructions permettent de définir par exemple les actions effectuées par une
+                fonction, ou encore la série d’instructions répétées dans une structure itérative, comme vous l’avez vu
+                en algorithmique.</p>
+            <h3>Variables</h3>
+             <p>Vous avez vu en algorithmique la notion de variables, éléments indispensables à la programmation,
+                permettant de travailler sur des données informatiques.
+            </p>
+                <h4> Déclaration et affectation de variables</h4>
+                <p>Toute variable utilisée dans un programme javascript doit obligatoirement être déclarée, par l’instructions
+                    suivante </p>
+                <h4>voir l'exemple </h4>
+                <img src="../img/expj9.png" alt="exemple9">
+                <p>Concernant les noms de variables, il n’y a pas de limitations particulière, si ce n’est de ne pas utiliser
+                    un des mots réservés du langage. Il est également à noter que le langage étant case sensitive, les majuscules et minuscules ont leur importance.
+                    Une fois la variable déclarée, il est alors possible de lui affecter une valeur, grâce à l’opérateur
+                    d’affectation :
+                    </p>
+                    <h4>voir l'exemple </h4>
+                <img src="../img/exp10j.png" alt="exemple10">
+                 <h4>Type de variables</h4>
+                  <p>omme nous l’avons souligné en introduction, le langage Javascript nous permet de déclarer les variables sans les typer, c’est-à-dire sans spécifier le type de données qu’elles contiendront. Le type de la
+                    variable dépendra dans ce cas-là de la nature de la valeur qui lui sera affectée en premier. Par exemple,
+                    le programme suivant forcera la variable a être de type entier :</p>
+                <h4>voir l'exemple </h4>
+                <img src="../img/exp11j.png" alt="exemple11">
+                 <p>Une autre solution pour typer les variables directement lors de leur déclaration est de leur affecter
+                    directement une valeur :</p>
+                    <h4>voir l'exemple </h4>
+                    <img src="../img/exp12j.png" alt="exemple12">
+                    <p>L’instruction précédente nous permet de passer en revue les trois types de variables principaux :
+                        numérique (Number), chaine de caractère (String) et booleen (Boolean) :
+                        • Number : accepte tout nombre (y compris à virgule)
+                        • String : accepte toute chaine de caractère, sans limitation de longeur
+                        • Booelan : prend les valeur True (vrai) ou false (faux)</p>
+                <h4> Portée d’une variable</h4>
+                 <p>Une fois la variable déclarée, elle est directement utilisable dans le bloc d’instructions qui la contient,
+                    et dans tous ceux qui lui sont inférieurs. Ainsi, une variable déclarée juste après la balise &ltscript> sera
+                    utilisable dans tout le programme, y compris dans les fonctions qui le compose. Par contre, une variable
+                    déclarée dans une fonction ne sera pas accessible depuis une autre fonction. Nous reviendrons sur cet
+                    aspect important de la portée des variables dans le paragraphe consacré aux fonctions</p>
+            <h3> Opérateurs</h3>
+                   <h4> Opérateurs arithmétiques</h4>
+                   <p>Les opérateurs arithmétiques s’appliquent sur une ou deux opérandes de types Number.
+                    Les opérateur d’incrémentation et de décrémentation correspondant aux instructions suivantes </p>
+                    <h4>voir l'exemple </h4>
+                    <img src="../img/exp13j.png" alt="exemple13">
+                    <h4> Opérateurs de comparaison</h4>
+                    <p>Les opérateurs de comparaison s’appliquent à différents types de données, et renvoient un booléen en
+                        fonction du résultat de la comparaison.</p>
+                        <table>
+                            <caption> Opérateurs arithmétiques
+                            </caption>
+                            <tr>
+                                <th>Opération</th>
+                                <th>Signe</th>
+                            </tr>
+                            <tr>
+                                <td>Addition</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>Soustraction</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplication</td>
+                                <td>*</td>
+                            </tr>
+                            <tr>
+                                <td>Division</td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <td>Modulo </td>
+                                <td>%</td>
+                            </tr>
+                            <tr>
+                                <td>Negation</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Incrément</td>
+                                <td>++</td>
+                            </tr>
+                            <tr>
+                                <td>Décrément</td>
+                                <td>--</td>
+                            </tr>
+                           
+                        </table>
+                       <table>
+                           <caption> Opérateurs de comparaison</caption>
+                       <tr>
+                           <td>Egalité</td>
+                           <td>==</td>
+                       </tr>
+                       <tr>
+                           <td>Différence</td>
+                           <td>!=</td>
+                       </tr>
+                       <tr>
+                           <td>Inférieur, supérieur</td>
+                           <td>&gt ; ></td>
+                       </tr>
+                       <tr>
+                           <td>Inférieur ou égal, supérieur ou égal</td>
+                           <td>&gt= ; >=</td>
+                       </tr>
+                       </table>
+                       </div>
+                       <div class="p1">
+                       <h4>Opérateurs logique</h4>
+                       <p>Ces opérateurs s’appliquent à des booléens, et permettent d’évaluer des expressions logiques :</p>
+            <h3> Structures conditionnelles</h3>
+                  <p>Vous avez vu en algorithmique les structures conditionnelles. La traduction de l’instruction algorithmique si ..alors ... sinon ... finsi se traduit en Javascript par :</p>
+                  <h4>voir l'exemple </h4>
+                  <img src="../img/exp14j.png" alt="exemple14">
+             <h3> Structures répétitives</h3>
+                 <p>Les structures itératives ou répétitives permettent d’exécuter plusieurs fois un bloc d’instructions.</p>
+                   <h4>Instruction for</h4>
+                   <p>La boucle For est à rapprocher de l’instruction pour vu en algorithmique. Elle permet de répéter un
+                    nombre de fois défini le bloc d’instructions situé juste après :
+                    </p>
+                   
+                    <h4>voir l'exemple </h4>
+                    <img src="../img/exp15j.png" alt="exemple15">
+                    <table>
+                    <caption> Opérateurs logiques</caption>
+                    <tr>
+                        <td>ET</td>
+                        <td>&&</td>
+                    </tr>
+                    <tr>
+                        <td>OU</td>
+                        <td>||</td>
+                    </tr>
+                    <tr>
+                        <td>NON</td>
+                        <td>!</td>
+                    </tr>
+                    </table>
+                    <p>La boucle For utilise donc un compteur, initialisé à une certaine valeur, valeur modifiée à chaque
+                        exécution du bloc d’instructions, jusqu’au changement de valeur de la condition. Le compteur étant
+                        une variable, il ne faut bien sûr pas omettre de la déclarer.</p>
+                        <h4>voir l'exemple </h4>
+                        <img src="../img/exp16j.png" alt="exemple16">
+                        <p>Cet exemple va donc écrire 10 fois les mots "hello world", suivi des chiffres 1,2,3 .. jusqu’à 10. Au
+                            premier passage dans la boucle, i se voit affecté la valeur 1. A chaque passage dans la boucle, le programme écrit la phrase, et incrémente i de 1. Quand i prend la valeur 11, la conditionnelle est fausse, et
+                            le programme saute directement à l’instruction suivante.</p>
+                        <h4> Instruction While</h4>
+                        <p>La boucle Javascript while est à rapprocher de la boucle tantque vue en algorithmique. Elle permet
+                            d’exécuter un bloc d’instructions tant qu’une expression booléenne est vraie</p>
+                        <h4>voir l'exemple </h4>
+                        <img src="../img/exp17j.png" alt="exemple17">
+                    <h3>Fonctions</h3>
+                       <h4> Déclaration d’une fonction</h4>
+                       <p>Nous avons étudié les fonctions en algorithmique, et aperçu quelques exemples dans les paragraphes
+                        précédents de leur application en Javascript.
+                        Une fonction en Javascript doit être déclarée selon le modèle suivant </p>
+                        <h4>voir l'exemple </h4>
+                        <img src="../img/exp18j.png" alt="exemple18">
+                        <p>Function est un mot réservé du langage Javascript. Para1, para2, ... contiennent des paramètres qui
+                            vont pouvoir être utilisés dans la fonction. Enfin, le mot réservé return permet de renvoyer une valeur
+                            à l’instruction appelante. Quand ce mot n’est pas présent dans le corps de la fonction, la fonction se
+                            comporte alors comme une procédure.</p>
+                        <h4>Appel d’une fonction</h4>
+                        <p>Un appel à une fonction est donc un ordre donné au navigateur pour exécuter des lignes de codes
+                            placées hors du bloc de code appelant. L’appel se fait de deux manières :
+                            • soit directement en donnant le nom de la fonction et les arguments qu’elle accepte quand la fonction ne retourne pas de valeurs <br>
+                            • soit en affectant le résultat de la fonction à une variable</p>
+                        <h4>Exemple de fonction</h4>
+                        <h4>voir l'exemple </h4>
+                        <img src="../img/exp19j.png" alt="exemple19">
+                    <h3> Tableaux</h3>
+                       <p>Les tableaux permettent de stocker plusieurs valeurs dans une seule variable. La déclaration d’une
+                        variable de type tableau se fait en utilisant l’instruction suivante :</p>
+                        <img src="../img/exp20j.png" alt="exemple20">
+                        <p>ou encore en précisant la taille du tableau </p>
+                        <img src="../img/exp21j.png" alt="exemple21">
+                        <p>ou encore en spécifiant les valeurs à insérer dans le tableau</p>
+                        <img src="../img/exp22j.png" alt="exemple22">
+                        <p>L’accès à un élément du tableau se fait en spécifiant l’indice (le rang) de l’élément :</p>
+                        <img src="../img/exp23j.png" alt="exemple23">
+                        <p>Il est bien sûr possible de donner plusieurs dimensions à un tableau, comme en algorithmique :</p>
+                        <img src="../img/exp24j.png" alt="exemple24">
+                        <p>permet de définir un tableau de deux dimensions.
+                            Enfin, pour obtenir la longueur d’un tableau, nous pouvons utiliser la propriété length :</p>
+                        <img src="../img/exp25j.png" alt="exemple25">
+                        </div>
+                        </div>
+                        </div>
+                        <div>
+                        </section>
+                        <section class="container1">
+                            <div class="titre">
+              <h1 >Le modèle objet du navigateur</h1>
+              <img src="../img/JavaScript frameworks-pana.svg" alt="im3">
+                          </div>
+                        <div class="paragraphe">
+                            <div class="titre2">
+           <h2> Le modèle objet du navigateur</h2>
+           <div class="con">
+               <div class="p1">
+              <h3> Les différents objets</h3>
+               <p>Un objet est une entité appartenant au monde des navigateurs ou au langage lui-même. Il sont soit
+                prédéfinis, soit créés de toute pièce par le programmeur. Un objet possède des propriétés, qui le caractérisent, et des méthodes, qui lui permettent d’effectuer des actions, et peuvent réagir à des évènements</p>
+                  <h4> L’organisation des objets du navigateur</h4>
+                   <p>L’objet qui nous intéressera particulièrement dans la programmation Javascript est l’objet Window, qui
+                    modélise la fenêtre du navigateur. Les différents éléments qui peuvent composer une page HTML sont
+                    ainsi organisés de manière hiérarchique à partir de cet objet Window.</p>
+                  <h4>Hiérarchie des objets du navigateur</h4>
+                    
+                  <img src="../img/exp26j.png" alt="exemple26">
+                   <h4> Les classes de bases de l’objet navigateur</h4>
+                   <p>es objets sont automatiquement instanciés à chaque étape du fonctionnement du navigateur, par exemple lors de l’ouverture d’une fenêtre ou de frames, la création des documents contenus dans chaque
+                    fenêtre ou frame, et les divers éléments (formulaires, img, liens ...) contenus dans chaque élément.
+                    Les applications JavaScript peuvent alors dialoguer avec ces objets visuels et les manipuler. Le programmeur peut ainsi agir sur l’état du navigateur, de ses fenêtres et des documents et des composants qui y
+                    sont inclus <br>
+                    Quelques uns des objets souvent manipulés :
+                    • navigator : c’est le logiciel client dont le nom est noté dans navigator.appName
+                    • window : l’objet de plus haut niveau créé par le navigateur, c’est sa fenêtre.
+                    • location : c’est l’objet URL de la fenêtre courante.
+                    • history : ce sont les URL précédemment visitées.
+                    • document : il s’agit du document courant, dont les propriétés sontle titre, les couleurs (fond, texte,
+                    lien ...), les formulaires, les img etc..
+                    Pour accéder à un objet de la page HTML, nous pouvons utiliser l’attribut name ou mieux encore,
+                     id que nous aurons bien évidemment appliqués à l’ensemble de nos balises HTML.
+                    Ainsi, l’accès à un champ du formulaire se fera par l’appel suivant :
+                  </p>
+                  <img src="../img/exp27j.png" alt="exemple27">
+                   <p>Nous voyons dans l’instruction précédente qu’il est cependant nécessaire de bien spécifier le "chemin"
+                    du formulaire : le formulaire faait bien partie de la fenêtre (window), qui contient un document HTML
+                    (document), qui lui même contient un formulaire, etc ...
+                    </p>
+                 <h4>Propriétés et méthodes</h4>
+                 <p>Chaque élément du document HTML est donc accessible via son nom et la hiérarchie des objets depuis
+                    le langage Javascript. Il s’agit maintenant de pouvoir manipuler ces objets en utilisant leurs propriétés,
+                    leurs méthodes et les évènements auxquels ils réagissent.
+                    Nous avons vu qu’une méthode permet en programmation objet d’effectuer des actions sur l’objet, et
+                    qu’une propriété est une de ses caractéristiques.
+                    Globalement, on peut manipuler grâce aux propriétés, l’ensemble des attributs de chaque balise
+                    HTML. Ainsi, si l’on veut modifier la classe CSS d’un objet de notre document, nous modifierons sa
+                    propriété classname :</p>
+                    <img src="../img/exp28j.png" alt="exemple28">
+                <p>Tous les attributs de toutes les balises sont ainsi manipulables avec le Javascript !
+                    De la même manière, il est possible de manipuler les évènements auxquels sont liés les éléments
+                    HTML, en utilisant leurs méthodes associées :</p>
+                    <img src="../img/exp29j.png" alt="exemple29">
+                 <p>Par exemple, l’envoi d’un formulaire, qui correspond à l’évènement HTML onsubmit, se fera par
+                    l’instruction Javascript :</p>
+                    <img src="../img/exp30j.png" alt="exemple30">
+                    </div>
+                    <div class="p1">
+            <h3>Les événements</h3>
+              <p>Nous avons vu dans les séquences du cours HTML que les balises HTML sont associées à des évènements auxquelles elles peuvent réagir. Ainsi, la balise <body> possède deux évènements intrinsèques
+                souvent utilisés, onload et onunload.
+                A l’intérieur de ces balises, il est donc possible d’associer du code javascript qui sera executé lorsque
+                l’évènement sera déclenché, soit par l’utilisateur (envoi d’un formulaire par exemple), soit par le navigateur lui-même (chargement d’une page par exemple).
+                Combiné à l’utilisation des feuilles de style, les évènements et Javascript permettent également
+                d’obtenir des combinaisons graphiques intéressantes. Les évènements accessibles pour chaque balise
+                HTML sont décrits dans la spécification HTML 4.0.
+                Voici une liste des principaux évènements intrinsèques </p>
+                   <table>
+                    <caption> Listes des principaux évènements</caption>
+                      <tr>
+                          <th>Nom</th>
+                          <th>Description</th>
+                      </tr>
+                      <tr>
+                          <td>onAbort</td>
+                          <td>Quand l’internaute arrête le chargement d’une
+                            image</td>
+                      </tr>
+                      <tr>
+                          <td>onBlur</td>
+                          <td>Quand un objet HTML n’a plus le focus
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>onChange</td>
+                          <td>Quand un objet HTML a été modifié et qu’il n’a
+                            plus le focus</td>
+                      </tr>
+                      <tr>
+                          <td>onClick</td>
+                          <td>Quand l’internaute clique sur un objet HTML</td>
+                      </tr>
+                      <tr>
+                          <td>Quand l’internaute clique sur un objet HTML</td>
+                          <td>Quand l’internaute double clique sur un objet
+                            HTML
+                            </td>
+                      </tr>
+                      <tr>
+                          <td>onError</td>
+                          <td>Quand le chargement de la page ou d’une
+                            image a entrainé une erreur</td>
+                      </tr>
+                      <tr>
+                          <td>onFocus</td>
+                          <td>Quand un objet HTML a le focus (cliquer dans
+                            un champ par exemple)
+                            </td>
+                      </tr>
+                      <tr>
+                          <td>onKeyDown</td>
+                          <td>Quand l’internaute appuie sur une touche de
+                            son clavier</td>
+                      </tr>
+                      <tr>
+                          <td>onKeyPress</td>
+                          <td>Quand une touche du clavier est enfoncée
+                            (combinaison de onKeyDown et onKeyUp)</td>
+                      </tr>
+                      <tr>
+                          <td>onKeyUp</td>
+                          <td> Quand l’internaute "lâche son doigt" d’une
+                            touche alors enfoncée</td>
+                      </tr>
+                      <tr>
+                          <td>onLoad</td>
+                          <td>Quand le changement de la page est fini</td>
+                      </tr>
+                      <tr>
+                          <td>onMouseDown</td>
+                          <td>Quand l’internaute appuie sur un bouton de la
+                            souris
+                            </td>
+                      </tr>
+                   </table>
+                   <h3> Exemples</h3>
+                      <h4>Example 2.1 Changement de classe d’un lien</h4>
+                      <img src="../img/exp31j.png" alt="exemple31">
+                      <h4>Example 2.2 Ouverture d’une nouvelle fenêtre</h4>
+                      <img src="../img/exp32j.png" alt="exemple32">
+                      <h4>Example 2.3 Changement d’image au passage de la souris</h4>
+                      <img src="../img/exp33j.png" alt="exemple33">
+                      <h4>Example 2.3 Changement d’image au passage de la souris
+                    </h4>
+                    <img src="../img/exp34j.png" alt="exemple33">
+                    </div>
+                    </div>
+                    </div>
+                   </div>
+                    </section>
+                    <section class="container1">
+                        <div class="titre">
+      <h1 class="titre">Application au contrôle de saisie des données</h1>
+      <img src="../img/Coding workshop-amico.svg" alt="im5">
+                              </div>
+                   <div class="paragraphe">
+                       <div class="titre2">
+        <h2>Validation des données</h2>      
+            <div class="con">
+                <div class="p1">
+          <p>Dans le cours HTML, nous avons étudié les formulaires, permettant à l’utilisateur de rentrer des données
+            dans une page Web. Pour le bon fonctionnement d’une application, une vérification des données est
+            souvent nécessaire. Par exemple, il vaut mieux vérifier qu’une date est bien valide avant de tenter de
+            l’insérer dans une base de données. Cette validation des données peut se faire de deux manières :
+            • du côté du serveur : les données sont envoyées à travers le réseau, et un programme vérifie qu’elles
+            sont valides. Mais ce mode de traitement nécessite de surcharger le serveur et encombre le réseau.
+            • du côté du client : avant de poster les données du formulaire, il est possible de programmer le navigateur pour qu’il effectue lui-même ces vérifications. C’est donc au niveau de la page contenant
+            le formulaire qu’il faut écrire un programme Javascript réalisant ces opérations de contrôle .</p>  
+            <h3>Les objets du formulaires</h3> 
+              <p>Nous avons vu précédemment les objets Javascript, et plus particulièrement les objets du navigateur.
+                Nous allons maintenant décrire avec précision certains des objets des formulaires, de manière à effectuer
+                certaines opérations de contrôle et de formatage des données entrées par l’utilisateur</p>
+               <h4> Les zones de saisies de texte</h4>
+               <p>Les zones de saisie de texte comporte les propriétés et méthodes suivantes :
+                • value : La valeur du champ (value en HTML) <br>
+                • name : Le nom du champ (name en HTML) <br>
+                • size : La taille du champ (size en HTML) <br>
+                • style : Feuilles de Styles JavaScript (JSSS) <br>
+                • focus() : Méthode qui donne le focus, c’est à dire que le curseur est dans le champ de saisie</p>
+               <h4>Les boutons</h4>
+               <p>Une seule méthode intéressante pour les boutons : onclick()            </p>
+               <h4> Les cases à cocher</h4>
+               <p>Les cases à cocher ont :
+                • onclick() : évènement qui intervient quand l’utilisateur clique dessus <br>
+                • checked : true pour valider la case à cocher, false sinon.</p>
+                <h4> L’objet form : exemple</h4>
+                <img src="../img/exp35j.png" alt="exemple35">
+            <h3>Traitement des chaines de caractères et des nombres</h3>
+                 <h4> Traitements des chaînes de caractères</h4>
+                  <p>Lors de la validation des formulaires, il est souvent nécessaire de traiter les chaînes de caractères.
+                    Javascript met à notre disposition quelques méthodes applicables aux string, détaillées dans le manuel
+                    Javascript. En voici quelques unes :
+                    • indexOf(searchValue) : retourne la place de la première occurence de la chaîne searchValue  <br>
+                    • substring(indexA, indexB) : retourne la chaîne de caractère comprise entre indexA et indexB <br>
+                    • toLowerCase(), toUpperCase() : renvoie la chaîne passée respectivement en minuscule et en majuscule <br>
+                    </p>
+                </div>
+                </div>
+                </div>
+            </div>
+            </section>
+            <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+       <div class="box">
+           <h3>Les Developpeurs Web</h3>
+          <p>un métier en perpétuel évolution, un manque de développeur web, un marché grandissant, un statut privilégier (CDI ou freelance), un bon salaire et la possibilité de le devenir sans diplôme particulier.
+             .</p>
+             <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/?hl=fr" class="fab fa-instagram"></a>
+                <a href="https://fr.linkedin.com/" class="fab fa-linkedin"></a>
+             </div>
+       </div>
+  
+       <div class="box">
+          <h3>Lien-Rapide</h3>
+          <a href="home.html" class="link">home</a>
+          <a href="pages/html.html" class="link">Html</a>
+          <a href="pages/css.html" class="link">Css</a>
+          <a href="pages/java.html" class="link">JavaScript</a>
+        
+          <a href="contact.html" class="link">contact</a>
+       </div>
+  
+       <div class="box">
+          <h3> Lien-utile </h3>
+          <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="link">Documentation javaScript</a>
+          <a href="https://developer.mozilla.org/fr/docs/Web/Css" class="link">Documentation Css</a>
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="link">Documentation Html</a>
+         
+       </div>
+  
+       <div class="box">
+          <h3>Vos-Questions</h3>
+          <p>s'inscrire</p>
+          <form action="">
+             <input type="email" name="" placeholder="entrer ton email" id="" class="email">
+             <input type="submit" value="inscrire" class="btn">
+          </form>
+       </div>
+  
+    </div>
+  
+  
+    <div class="credit">  © Copyright-2022</div>
+  
+  </section>
+  
+  
+  <!-- footer section ends -->
+  
+  
+  

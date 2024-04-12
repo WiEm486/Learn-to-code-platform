@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="ce site contient des informations qui concerne le html css et java"/>
+  <meta name="Keywords" content="css,html,java,formation,balises"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Document Css</title>
+ <link rel="icon" href="../img//icon.png" >
+ <link rel="stylesheet" href="../css/style2.css">
+
+
+ <style>
+     
+@font-face{
+ 
+    font-family:Natural ;
+    src:url("../Natural.ttf");
+}
+
+     
+
+
+     @font-face {
+        font-family:Klik-light ;
+        src: url(../police/Klik-Light.ttf);
+     }
+     @font-face {
+        font-family: ReplayTime;
+        src: url(../police/ReplayTime.ttf);
+     }
+     
+     @font-face{
+        font-family:Alexanna;
+        src:url(../police/Alexanna.ttf)
+     }
+    @font-face{
+        font-family:Heart Blues;
+        src:url(../police/Heart\ Blues.ttf)
+    }
+
+ </style>
+ <script src="https://kit.fontawesome.com/09bcc4c836.js" crossorigin="anonymous"></script>
+ </head>
+
+  
+ <header class="header">
+ 
+  
+  <img src="../img/logo2.png" alt="logo"> 
+    <nav class="navbar">
+     
+       <a href="../home.html" class="link">home</a>
+       <a href="html.html" class="link">Html</a>
+       <a href="css.html" class="css-nav">Css</a>
+       <a href="java.html" class="link">JavaScript</a>
+      
+       <a href="../contact.html">contact</a>
+    </nav>
+ 
+   
+ 
+ </header>
+ <section class="heading-link">
+  <h1 class="link">Apprendre Css</h1>
+  <a href="../home.html">Home</a>/
+  <a href="#">Css</a>
+  
+<!-- <nav >
+  <div class="logo"></div>
+  <ul>
+          <li class="active"><a href="../indexx.html">Acceuil</a></li>
+         <li><a href="html.html">Html</a></li>
+         <li><a href="css.html">Css</a></li>
+         <li><a href="java.html">JavaScript</a></li>
+     <li><a href="contact.html">Contact</a></li>   
+  </ul>
+<h1>Coder</h1>
+<h2>C'est Simple </h2>
+</nav> -->
+</section>
+<section>
+
+<section class="container1">
+  <div class="titre">
+<h1 >CSS : introduction et notions de base</h1>
+<img src="../img/Hand coding-rafiki (1).svg" alt="image5">
+</div>
+<div class="paragraphe">   
+<h2>CSS : Cascading Style Sheets</h2>
+<div class="con">
+  <div class="p1">
+    <ul>
+        <li>CSS : feuille de style en cascade</li>
+        <li>Permettent de générer la présentation d’une page HTML : séparer 
+            la structure (HTML) de sa présentation (CSS) </li>
+        <li>Ensemble de règles stylistiques applicables à un, ou plusieurs 
+            documents HTML => gain de taille du fichier HTML</li>
+        <li>Facilite la mise à jour graphique, favorise l’accessibilité</li>
+        <li>Gestion des différents médias possible (print, screen, mobile etc.)</li>
+    </ul>
+      <h3>Le CSS “en ligne” dans la balise HTML</h3>
+      <ul>
+          <li> Attribut style = …;</li>
+          <li>« Je veux des titres roses » : 
+            &lth1 style="color:pink;" ></li>
+          <li> Et des sous titres avec une couleur de 
+            fond violette
+            &lth2 style="background-color:purple"></li>
+      </ul>
+      <h3>Problèmes de maintenabilité</h3>
+      <ul>
+          <li>Et si je veux appliquer un style à tous les titres ? </li>
+          <li>Et si je veux changer tous les titres d’un coup ? </li>
+          <li>Long et fastidieux</li>
+          <li>MAIS c’est comme ça que le JavaScript inject du CSS donc vous 
+            risquez de le voir dans l’inspecteur d’élément.</li>
+      </ul>
+      <h3>Le CSS « interne» dans l’entête du HTML</h3>
+        <ul>
+            <li> On place une balise &ltstyle> dans la balise &lthead> du document</li>
+            <li>Changer la couleur de tous les titres H2 en blanc :
+                &ltstyle type="text/css"><br><br>
+                    h2{<br>
+                     color: #fff;<br>
+                    }<br>
+                    &lt/style><br>
+            </li>
+        </ul>
+        </div>
+        <div class="p1">
+       <h3>Le CSS « interne» dans l’entête du HTML</h3>
+       <ul>
+           <li>Avantage : <br>
+               – Possibilité d’appliquer une règle sur tous les mêmes éléments d’un 
+            même document</li>
+           <li>inconvénient :
+            – Ne s’applique qu’à ce document, et non au site en entier <br>
+            – Il faut donc modifier le CSS sur chaque page (ex : si on a 10 pages, 
+            modifier les styles sur les 10 fichiers)
+            
+           </li>
+           <li>MAIS certains plugins de CMS (WordPress par exemple) mal conçus 
+            l’utilisent encore. Vous le verrez aussi dans le code de newsletters</li>
+       </ul>
+       <h3>La/les feuille(s) de style externe(s)</h3>
+       <ul>
+           <li>Nous utiliserons les mêmes conventions de chemin que pour les 
+            images et pages </li>
+           <li> Création d’un nouveau fichier appelé « styles.css » (notez 
+            l’extension .css ici) et on lie la feuille de styles au HTML</li>
+           <li>! On « lie » la feuille de style au document HTML avec une balise 
+            &ltlink>dans le &lthead> <span>&ltlink rel="stylesheet" href="styles.css"/></span></li>
+       </ul>
+        <h4>voir l'exemple</h4>
+        <img src="../img/css1.png" alt="exp1">
+        <h3>Avantage de la feuille de style externe</h3>
+        <ul>
+            <li> Séparation totale de la structure 
+                et de la présentation : possibilité 
+                d’avoir des présentations 
+                alternatives</li>
+            <li>Possibilité d’appliquer la même 
+                feuille de style sur plusieurs 
+                pages (donc le site en entier) 
+                sans devoir la dupliquer</li>
+            <li> Cohérence de la présentation sur 
+                tout le site et les pages futures</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+      </section>
+        <section class="container1">
+  <h2 >La syntaxe CSS</h2
+    >    <div class="con">
+      <div class="p1">
+        <div class="paragraphe">
+      <h3>La syntaxe de base</h3>
+      <ul>
+          <li>La syntaxe est composée de 3 éléments: <br>
+            – Le sélecteur est l’élément sur lequel on applique les propriétés (balise 
+        HTML, id, classe, etc.) <br>
+       – La propriété est l’effet que l’on va vouloir donner (ex couleur de texte, 
+       positionnement, couleur de fond, etc.) <br>
+       – La valeur de la propriété CSS (rouge, 10px, etc.) <br>
+       selecteur { <br>
+       propriete: valeur <br>
+       propriete: valeur<br>
+        ...<br>
+            }<br>
+         
+          </li>
+      </ul>
+    </div>
+      </div>
+      </div>
+    </section>
+    <section class="container1">
+      <div class="titre">
+    <h1 >Généalogie et différents 
+        types de sélecteurs</h1>
+        <img src="../img/Hand coding-pana (1).svg" alt="im">
+        </div>
+        <div class="paragraphe">
+        <h2>Le sélecteur usuel d'élément HTML</h2>
+        <div class="con">
+          <div class="p1">
+          <ul>
+              <li>On peut sélectionner n’importe quel élément HTML et lui appliquer 
+                un style</li>
+              <li> Une propriété appliquée sur un élément HTML, s’applique par 
+                défaut à tous les éléments présents dans le document HTML.</li>
+          </ul>
+        <h3>Notion d’enfant et de descendance</h3>
+          <ul>
+              <li>h1, p, h2, p sont enfants de 
+                div</li>
+              <li>a, strong et em sont enfant du 
+                p dans lequel ils sont 
+                contenus (mais pas de l’autre 
+                p)</li>
+              <li>a, strong et em (et h1, p, h2 
+                et p) sont descendants de div</li>
+          </ul>
+          <h4>voir l'exemple</h4>
+        <img src="../img/css2.png" alt="exp2">
+        </div>
+        <div class="p1">
+          <h3>Notion de parent et d'ancêtre</h3>
+          <ul>
+              <li>div est parent de h1 p, h2, p </li>
+              <li>Le 2ème p est parent de a, 
+                strong et em. </li>
+              <li>div est ancêtre de a, strong 
+                et em (et de h1, p h2 et p)</li>
+          </ul>
+          <h4>voir l'exemple</h4>
+          <img src="../img/css3.png" alt="exp3">
+          <h3>Sélecteur de hiérarchie</h3>
+           <ul>
+               <li>Pour sélectionner le a 
+                descendant de p, nous allons 
+                pouvoir écrire : <br>
+                p a { … } <br>
+                (notez l’espace entre le p et le 
+                a)
+                </li>
+           </ul>
+             <h3>Sélecteur de groupe</h3>
+             <ul>
+                 <li>Pour sélectionner plusieurs 
+                    éléments et leur appliquer la 
+                    même valeur, on les sépare 
+                    par une virgule. <br>
+                    h1, h2 { color: red; } <br>
+
+                </li>
+                <li> Va donner la couleur rouge à 
+                    tous les h1 ou h2</li>
+             </ul>
+              
+             <h4>voir l'exemple</h4>
+             <img src="../img/css3.png" alt="exp3">
+             </div>
+             </div>
+             <h2>Les sélecteurs de classe</h2>
+             <div class="con">
+               <div class="p1">
+
+             
+             <ul>
+                 <li>class=" " est un attribut qui peut se mettre sur n’importe quelle 
+                    balise .
+                    Il permet de cibler de manière plus « spécifique » certains éléments
+                <span><p class="important"> Un paragraphe 
+                    spécifique qui est mis en avant </p></span></li>
+             </ul>
+            </div>
+          </div>
+             <h2>Classes multiple</h2>
+             <div class="con">
+               <div class="p1">
+             <ul>
+               <li>Il est possible d’avoir plusieurs classes sur un élément, on les 
+                sépare d’un espace  <span>&ltp class="remarque important"> Une remarque mis en avant &lt/
+                  p></span></li>
+               <li>Une même classe peut être utilisée sur plusieurs balises dans le 
+                même document</li>
+             </ul>
+             <h3>Cibler une classe indépendamment de la balise</h3>
+              <ul>
+                <li>Si on veut cibler une classe, sans se préoccuper de la 
+                  balise on utilise le « point ». <br>
+                   
+                   .nomdeclasse { } </li>
+                
+              </ul>
+              </div>
+              <div class="p1">
+              <h3>Cibler une balise HTML avec une classe</h3>
+               <ul>
+                 <li> Pour cibler un élément doté d'une classe en CSS on procède de la 
+                  manière suivante (notez qu’il n’y a pas d’espace) <br>
+
+                   element.maclasse { }</li>
+                 <li> Par exemple : p.toto { } va cibler tous les éléments comme celui-ci : 
+                  &ltp class="toto"> … &lt/p></li>
+               </ul>
+               <h3>L’id (identifiant)</h3>
+               <ul>
+                 <li>Il a le même rôle qu’une classe, mais doit être unique sur la page 
+                  (donc on va moins l’utiliser)</li>
+                 <li> Un seul attribut id par balise est possible</li>
+                 <li> On le note &ltelement id="monid"></li>
+                 <li> On le cible en CSS avec #monid { }</li>
+               </ul>
+              </div>
+               </div>
+              <h2>En résumé</h2>
+              <div class="con">
+                <div class="p1">
+
+             
+              <table>
+                <tr>
+                  <th>CSS</th>
+                  <th>HTML ciblé</th>
+                </tr>
+                <tr>
+                  <td>p { }</td>
+                  <td>&ltp> …. &lt/p></td>
+                </tr>
+                <tr>
+                  <td>.maclasse { }</td>
+                  <td>&ltelement class="maclasse"> ... &lt/element></td>
+                </tr>
+                <tr>
+                  <td>#monid { }</td>
+                  <td>&ltelement id="monid"> ... &lt/element></td>
+                </tr>
+                <tr>
+                  <td>p.maclasse { }</td>
+                  <td>&ltp class="maclasse"> … &lt/p></td>
+                </tr>
+                <tr>
+                  <td>p .maclasse { }</td>
+                  <td>&ltp> &ltelement class="maclasse"> …. &lt/element> 
+                    &lt/p></td>
+                </tr>
+                <tr>
+                  <td>p, div { }</td>
+                  <td>&ltp> … &ltp> 
+                    &ltdiv> … &lt/div></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+              <h2>Les pseudos-classes sur les liens
+              </h2>
+              <div class="con">
+                <div class="p1">
+              <ul>
+                <li>Le sélecteur a:link désigne les liens hypertextes non visités.</li>
+                <li>Le sélecteur a:visited désigne les liens hypertextes déjà visités </li>
+                <li>Le sélecteur a:hover désigne un lien survolé. </li>
+                <li>Le sélecteur a:active désigne un lien cliqué. </li>
+                <li>Pour retenir l’ordre : LoVe Hate : link, visited, hover, active</li>
+              </ul>
+                <h3>Propriétés de typographie, polices et puces</h3>
+                  <ul>
+                    <li> font-family : indiquer la (ou les) polices à utiliser <br>
+                      body { font-family: Arial, Helvetica, sans-serif;} </li>
+                    <li>L’ordre des polices appliquées est celui de la propriété de gauche à 
+                      droite</li>
+                  </ul>
+                  <h3>Font-size</h3>
+                  <ul>
+                    <li>font-size : valeur en unité permet de définir la taille d’une police (= 
+                      la « hauteur ») </li>
+                    <li>On utilise les unités vues précédemment (px, em, etc.)
+                    </li>
+                    <li>Permet de mettre en gras d'autres éléments</li>
+                  </ul>
+                  <h3>Font-style</h3>
+                  <ul>
+                    <li>font-style : valeur permet de préciser le style de police</li>
+                    <li>Principales valeurs possibles : normal, italic, oblique.</li>
+                    <li>Permet de mettre en italique des éléments</li>
+                  </ul>
+                  </div>
+                  <div class="p1">
+                  <h3>Text-align</h3>
+                  <ul>
+                    <li> text-align : valeur permet d’aligner le texte à gauche, droite ou 
+                      milieu</li>
+                    <li>Les valeurs possibles sont : left, right, center, justify (comme sur 
+                      Word) </li>
+                    <li> L’alignement se fait sur le contenu des balises de type bloc 
+                      (paragraphes, titres, divs, etc.)</li>
+                  </ul>
+                  <h3>Text-transform</h3>
+                  <ul>
+                    <li> text-transform permet de transformer le texte en majuscule, 
+                      minuscule</li>
+                    <li> Valeurs possibles : 
+                       none <br>
+                       capitalize <br>
+                       uppercase <br>
+                       lowercase</li>
+                  </ul>
+                      <h3>Text-decoration</h3>
+                      <ul>
+                        <li> text-decoration : valeur permet de changer différents valeurs de 
+                          « décoration »</li>
+                        <li>Valeurs possibles :
+                          – none: permet d'empêcher l'héritage de la propriété et plus 
+                           particulièrement de supprimer le soulignement par défaut des liens
+                           – overline : surlignement  <br>
+                           – underline : soulignement <br>
+                           – line-through: texte barré <br>
+                        </li>
+                      </ul>
+                      </div>
+                      </div>
+
+                         <h2>Listes à puces</h2>
+                         <div class="con">
+                           <div class="p1">
+
+                        
+                         <ul>
+                           <li> list-style-type : permet de spécifier le type de puce ou de 
+                            numérotation (appliqué sur le ul / ol) </li>
+                           <li> Valeurs possibles <br>
+                            – none (pas de puce), disc, circle, square</li>
+                         </ul>
+                          <h3> Valeurs possibles
+                            – none (pas de puce), disc, circle, square</h3>
+                            </div>
+                          </div>
+                        </div>
+                          </section>
+                           <section class="container1">
+              <h2 >Bordures et arrières plans</h2>
+              <div class="con">
+                  <div class="p1">
+             
+                        <h3>Les bordures</h3>
+                        <ul>
+                          <li>La propriété border permet d'ajouter une bordure à un élément</li>
+                          <li> Elle a 3 « sous propriétés » possibles : style, color et width.</li>
+                          <li>On regroupe souvent comme ceci : 
+                            border: width style color; </li>
+                          <li>On peut décomposer les 4 bordures de la manière suivante : 
+                            border-top: …;  <br>
+                            border-left: …; <br>
+                            border-right: …; <br>
+                            border-bottom: …</li>
+                            
+                          <li>Si on ne précise pas à quelle bordure on applique la propriété, elle 
+                            s’applique aux 4.</li>
+                        </ul>
+                          <h3>Style de bordure</h3>
+                          <ul>
+                            <li>! none : pas de bordure (par défaut);
+                            </li>
+                            <li> dotted : pointillés;</li>
+                            <li>dashed : tirets</li>
+                            <li>solid : un trait simple;</li>
+                            <li>double : bordure double</li>
+                            <li>groove : en relief</li>
+                            <li>ridge : autre effet relief;</li>
+                            <li>inset : effet 3D global enfoncé</li>
+                            <li>outset : effet 3D global surélevé</li>
+                          </ul>
+                          <img src="../img/exp4.png" alt="exp4">
+                          <h3>Des bords arrondis : CSS3</h3>
+                          <ul>
+                            <li> border-radius : valeur permet de faire des bords arrondis (supporté 
+                              à partie de IE9, propriété CSS3)</li>
+                            <li>Valeur : une valeur en unité de mesure (px, em ou même %) <br>
+                              – Le même arrondi partout : border-radius : 10px; <br>
+                              – Un arrondi par angle (en haut à gauche, en haut à droite, en bas à droite, en bas à <br> 
+                              gauche ) : border-radius : 2px 20px 5px 10px;</li>
+                          </ul>
+                          </div>
+                          <div class="p1">
+                          <h3>Background-color</h3>
+                          <ul>
+                            <li>background-color : valeur permet de donner une couleur de 
+                              fond. </li>
+                            <li> Valeurs : n’importe quelle couleur CSS</li>
+                            <li> Sur un élément bloc (prend toute la largeur) ou inline (prend la 
+                              largeur du contenu)</li>
+                          </ul>
+                          <h3>Background-image</h3>
+                          <ul>
+                            <li> background-image : valeur permet de définir une image 
+                              de fond pour l'élément </li>
+                            <li> Valeur : none ou url("monimage.png" )</li>
+                            <li>Par défaut : l’image se répète horizontalement et verticalement 
+                              (comme une mosaïque)</li>
+                          </ul>
+                          <h3>Background-repeat</h3>
+                          <ul>
+                            <li>background-repeat permet de définir la façon dont l’image va se 
+                              répéter.</li>
+                              <li> Valeurs possibles : <br>
+                                – no-repeat : l’image ne sera pas répétée <br>
+                                – repeat-x : l’image sera répétée horizontalement <br>
+                                – repeat-y : l’image sera répétée verticalement</li>
+                          </ul>
+                          </div>
+                        </div>
+                        
+                         
+                         <section class="container1">
+                  <h2 >Dimensions, margin  et padding</h2> 
+                  <div class="con">
+                             <div class="p1">
+                          
+                          <h3>Petit rappel inline et block</h3>          
+                               <ul>
+                                 <li>Sans altération CSS, les éléments de bloc prennent toute la largeur 
+                                  de leur parent, et sont suivis d’un retour à la ligne (body, html, p, div, 
+                                  h1, etc.) </li>
+                                 <li>Les éléments de type inline prennent la largeur de leur contenu, et 
+                                  ne sont pas suivis d’un retour à la ligne (span, a, strong, img, etc.). </li>
+                               </ul>
+                            <h3>Largeur et hauteur d'un élément : width et height</h3>   
+                                  <ul>
+                                    <li> width (largeur) et height (hauteur) ne sont applicables QUE sur 
+                                      des éléments de bloc </li>
+                                    <li>Valeurs possibles : auto (par défaut, toute la taille du parent), valeur 
+                                      numérique en px, % ou même em. body{ width: 800px;}</li>
+                                  </ul>
+                            <h3>Marge extérieure « margin »</h3>
+                                <ul>
+                                  <li>La propriété margin détermine l’espace entre le bord de l’élément, 
+                                    et l’élément suivant. </li>
+                                  <li>Par défaut margin: valeur applique la même valeur aux 4 cotés</li>
+                                  <li> Valeur possible : auto, valeur en unité de mesure, positive ou 
+                                    négative</li>
+                                <li> On peut la décomposer individuellement en  <br>
+                                  – margin-top : marge extérieure haute   <br>
+                                  – margin-right : marge extérieure droite <br>
+                                  – margin-bottom : marge extérieure basse <br>
+                                  – margin-left : marge extérieure gauche</li>
+                                <li> Ou rassembler les 4 valeurs : margin: 10px 5px 8px 15px; (dans 
+                                  l’ordre : haut, droite, bas, gauche)</li>
+                                  </ul>
+                                  </div>
+                                  <div class="p1">
+                             <h3>Margin et éléments inline</h3>     
+                                <ul>
+                                  <li>Par défaut, une margin top ou bottom sur un élément inline ne 
+                                    fonctionnera pas (puisqu’il est dans le flux de la page).</li>
+                                  <li>Une marge left ou right fonctionnera par contre</li>
+                                </ul>
+                              <h3>Padding : la marge « intérieure »</h3>
+                                 <ul>
+                                   <li>On peut la décomposer individuellement en 
+                                    – padding-top : marge intérieure haute  <br>
+                                    – padding-right : marge intérieure droite <br>
+                                    – padding-bottom : marge intérieure basse <br>
+                                    – padding-left : marge intérieure gauche</li>
+                                   <li> Ou rassembler les 4 valeurs : padding: 10px 5px 8px 15px;
+                                    (dans l’ordre : haut, droite, bas, gauche)</li>
+                                 </ul>
+                                </div>
+                                </div>
+                                </section>
+                      <section class="container1">
+                        <div class="titre">
+                    <h1 >Positionnements CSS  Les « flottants » et le flux</h1>
+                    <img src="../img/Hand coding-bro (1).svg" alt="code">
+                  </div>
+                       <div class="paragraphe">
+                            <h2>Les « flottants » et le flux</h2>
+                            <div class="con">
+                              <div class="p1">
+                              <ul>
+                                <li> La propriété float:valeur permet d’extraire des éléments du flux de la 
+                                  page, ce qui signifie que le reste du contenu « coule »autour</li>
+                                <li> Elle prend 3 valeurs : left, right et none (permet de remettre un élément 
+                                  dans le flux)</li>
+                              </ul>
+                              </div>
+                                 <div class="p1">
+                              <h3>Problème des flottants</h3>
+                              <ul>
+                                <li> Comme le contenu « coule » autour, on se retrouve avec ce genre 
+                                  de problèmes</li>
+                                <li>La propriété clear : valeur permet à un élément de cesser le 
+                                  contournement des éléments flottants. Il se positionne alors sous les 
+                                  éléments flottants précédents comme si ces derniers étaient restés dans 
+                                  le flux</li>
+                                <li> Valeurs possibles : 
+                                  – clear: left permet d’empêcher le contournement des blocs flottants à gauche  <br>
+                                  – clear: right permet d’empêcher le contournement des blocs flottants à droite <br>
+                                  – clear : both permet d’empêcher le contournement des blocs flottants à  <br>
+                                  gauche et à droite</li>
+                              </ul>
+                              </div>
+                            </div>
+                          </div>
+                          </section>
+                      <h2 >Positionnements CSS
+                          La propriété « display » pour mise en page</h2> 
+                            <div class="con">
+                              <div class="p1">
+                            
+                                 <h3>La propriété « display » pour mise en page</h3>     
+                                      <ul>
+                                      <li>La propriété display: valeur va permettre une mise en forme 
+                                          avancée</li>
+                                        <li> Quelques unes des valeurs possibles sont : block, inline, inline block et none </li>
+                                        <li>Ces valeurs sont appliquées par défaut en fonction des éléments  <br>
+                                          – p, div, h1, etc. : display :block; <br>
+                                          – span, a, em, strong, etc. : display : inline</li>
+                                      </ul>
+                                 <h3>Display:block</h3>   
+                                     <ul>
+                                       <li>Il est possible de transformer un élément inline en élément de bloc 
+                                        avec display: block</li>
+                                       <li>Il a alors toutes les propriétés d’un élément de bloc : par défaut, il 
+                                        prend toute la largeur de son parent, on peut en changer la 
+                                        dimension ET est suivi d’un retour à la ligne. On peut alors lui 
+                                        appliquer des marges.</li>
+                                     </ul>  
+                                     </div>
+                                     <div class="p1">
+                                   <h3>Display:inline</h3>
+                                      <ul>
+                                        <li>Nous connaissons déjà display:inline appliqué sur les éléments de 
+                                          type inline (span, a, em, strong, etc.).</li>
+                                        <li> Il permet aux éléments de rester sur une seule ligne (on ne peut 
+                                          alors pas leur donner de largeur)</li>
+                                      </ul>
+                                    <h3>Display:inline-block</h3>
+                                     <ul>
+                                       <li> display: inline-block est une propriété hybride qui permet à un 
+                                        élément d’avoir les propriétés d’un élément en ligne (pas de retour 
+                                        à la ligne après l’élément), mais avec les propriétés d’un bloc 
+                                        (possibilité d’avoir une dimension et des marges)</li>
+                                     </ul>
+                                     <h3>Display:none</h3>
+                                     <ul>
+                                       <li>display: none permet de retirer un élément du flux de la page : il 
+                                        n’est plus visible, et la place qu’il occupait est disponible pour 
+                                        d’autres éléments, c’est comme s’il n’existait pas.</li>
+                                       <li>Les éléments en display:none ne sont pas lus par les lecteurs 
+                                        d’écran</li>
+                                       <li>Pour rendre l’élément à nouveau visible, il faut lui appliquer par 
+                                        exemple display:block</li>
+                                     </ul>
+                                     </div>
+                                     </div>
+                             
+                      <h2 >Positionnement CSS
+                        Position relative, absolute et fixed
+                        </h2>
+                       <div class="con">
+                         <div class="p1">
+                                <h3>Position:relative</h3>
+                                <ul>
+                                  <li>On peut utiliser les propriété top, left, right et bottom pour déplacer 
+                                    l'élément </li>
+                                  <li>Le reste du contenu ne sera pas affecté</li>
+                                  <li> top, left right et bottom peuvent prendre des valeurs positives ou 
+                                    négatives (10px, -30px, etc.)</li>
+                                </ul>
+                                  <h3>Position: fixed</h3>
+                                  <ul>
+                                    <li> Un élément en position: fixed; ne bougera pas, même si on fait 
+                                      défiler la page. Il sort du flux et se positionne au dessus des autres 
+                                      éléments.</li>
+                                    <li> Il se positionne par rapport à l'espace affichable du navigateur</li>
+                                  </ul>
+                                  </div>
+                                  <div class="p1">
+                                <h3>Position: absolute</h3>
+                                <ul>
+                                  <li>Un élément en position: absolute;
+                                    – sort du flux (les autres éléments se réorganisent comme s’il n’était pas là)
+                                    – vient se positionner par rapport à son dernier ancêtre positionné, à l’intérieur  <br>
+                                    de celui-ci.</li>
+                                  <li>Par défaut, si aucun ancêtre n’est positionné (et qu’on a modifié top, left, 
+                                    right ou bottom) il se positionne par rapport à l'élément racine <html>.</li>
+                                  <li> Pour positionner le parent, on donne au parent une position: relative | 
+                                    fixed | absolute;</li>
+                                </ul>
+                                <img src="../img/exp5.png" alt="exp5">
+                                </div>
+                                </div>
+                              </section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+     <div class="box">
+         <h3>Les Developpeurs Web</h3>
+        <p>un métier en perpétuel évolution, un manque de développeur web, un marché grandissant, un statut privilégier (CDI ou freelance), un bon salaire et la possibilité de le devenir sans diplôme particulier.
+           .</p>
+           <div class="share">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/?hl=fr" class="fab fa-instagram"></a>
+            <a href="https://fr.linkedin.com/" class="fab fa-linkedin"></a>
+         </div>
+     </div>
+
+     <div class="box">
+        <h3>Lien-Rapide</h3>
+        <a href="home.html" class="link">home</a>
+        <a href="pages/html.html" class="link">Html</a>
+        <a href="pages/css.html" class="link">Css</a>
+        <a href="pages/java.html" class="link">JavaScript</a>
+      
+        <a href="contact.html" class="link">contact</a>
+     </div>
+
+     <div class="box">
+        <h3> Lien-utile </h3>
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="link">Documentation javaScript</a>
+        <a href="https://developer.mozilla.org/fr/docs/Web/Css" class="link">Documentation Css</a>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="link">Documentation Html</a>
+       
+     </div>
+
+     <div class="box">
+        <h3>Vos-Questions</h3>
+        <p>s'inscrire</p>
+        <form action="">
+           <input type="email" name="" placeholder="entrer ton email" id="" class="email">
+           <input type="submit" value="inscrire" class="btn">
+        </form>
+     </div>
+
+  </div>
+
+
+  <div class="credit">  © Copyright-2022</div>
+
+</section>
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+             
+
+
+
+
+
+
+

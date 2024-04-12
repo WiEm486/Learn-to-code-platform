@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="ce site contient des informations qui concerne le html css et java"/>
+  <meta name="Keywords" content="css,html,java,formation,balises"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Document</title>
+ <link rel="icon" href="../img/icon.png" >
+
+ 
+ <link rel="stylesheet" href="../css/style2.css">
+ 
+ <style>
+     
+
+
+  @font-face {
+     font-family:Klik-light ;
+     src: url(../police/Klik-Light.ttf);
+  }
+  @font-face {
+     font-family: ReplayTime;
+     src: url(../police/ReplayTime.ttf);
+  }
+  @font-face {
+     font-family:Natural ;
+     src: url(../police/Natural.ttf);
+  }
+  @font-face{
+     font-family:Alexanna;
+     src:url(../police/Alexanna.ttf)
+  }
+ @font-face{
+     font-family:Heart Blues;
+     src:url(../police/Heart\ Blues.ttf)
+ }
+</style>
+<script src="https://kit.fontawesome.com/09bcc4c836.js" crossorigin="anonymous"></script>
+ </head>
+ <header class="header">
+ 
+  
+  <img src="../img/logo2.png" alt="logo"> 
+ 
+  <nav class="navbar">
+  
+     <a href="../home.html" class="link">home</a>
+     <a href="html.html" class="html-nav">Html</a>
+     <a href="css.html" class="link">Css</a>
+     <a href="java.html" class="link">JavaScript</a>
+    
+     <a href="../contact.html">contact</a>
+  </nav>
+
+ 
+
+</header>
+
+
+ <section class="heading-link">
+
+  <h1 class="link">Apprendre Html</h1>
+  <a href="../home.html">Home</a>/
+  <a href="#">Html</a>
+  
+
+
+
+</section>
+
+
+<section>
+<!-- <div>
+<h2>Sommaire </h2>
+<ol type="I"> 
+<li><a href="#general">Le HTML – généralités</a></li>
+    <li><a href="#balise">La syntaxe HTML : balises, éléments et attributs</a> </li>
+    <li><a href="#structure">Doctype, html, body : structure d'un document</a> </li>
+    <li><a href="#contenu"> Les éléments de structuration du contenu </a></li>
+    <li><a href="#lien">Les liens hypertexte </a></li>
+    <li><a href="#mise">Les éléments de « mise en forme » de texte</a></li>
+    <li><a href="#liste">Les éléments de liste</a> </li>
+    <li><a href="#img">Ajouter des images avec la balise &ltimg></a></li>
+    <li><a href="#tab">Les tableaux HTML</a></li>
+    <li><a href="#form"> Les formulaires</a> </li>
+    </ol>
+</div> -->
+<div class="titre">
+  <h1>HTML : définition</h1>
+   <img src="../img/Coding workshop-bro.svg" alt="imagecode">
+</div>
+
+<h2 id="general"> Le HTML – généralités</h2>
+    <div class="con">
+      <div class="p1">
+     <h3>Une page Web c’est ...</h3>
+   <p>
+    Initiation HTML CSS - Stéphanie Walter - 2016 / 201711<br>Un fichier HTML est un format de fichier « texte » éditable dont les éléments ont du sens <br>•Au format .html  •<br>Peut contenir du texte, des images, des liens, des médias, etc. •Peut être liée à une autre page via des liens
+  </p>
+   <h3>Un site Web c’est </h3>
+   <p>
+    •Un ensemble de pages liées entre elles <br>•Accessible en ligne depuis n'importe où
+   </p>
+
+  
+   Hypertext Markup Language (HTML) <br>
+   Langage de balises qui permet de structurer des pages <br>
+   •Différentes versions depuis 1989 <br>
+   Aujourd’hui : –XHTML (2000 – 2006) –HTML5<br>
+  </div>
+  </div>
+
+<h2 id="balise">La syntaxe HTML : balises, éléments et attributs</h2>
+<div class="con">
+  <div class="p1">
+  <h3>Le principe de balise</h3>
+  <p>•Les balises structurent le contenu de la page (texte, images, etc.)<br>
+       •Chaque balise a un rôle et donne du sens au contenu présenté</p>
+   
+    <p>Initiation HTML CSS - Stéphanie Walter - 2016 / 201737
+        •Par convention et pour faciliter la lecture du code, toute balise ouverte doit être fermée (sauf exception). <br>
+          •Certaines balises bien particulières n’ont pas besoin d’être fermées, on les dit « auto-fermantes », elles n’ont ni contenu ni balise fermante. <br> 
+           •Note : je mets le / final par convention, mais pas obligatoire</p>
+
+  <h3>Attributs et valeurs</h3>
+   <p>•Certaines balises peuvent être complétées par des attributs précisant certains paramètres (l'adresse des liens, source d'une image à afficher, etc.) <br>
+    • Une balise peut contenir plusieurs attributsAttributs et valeurs
+  </p>
+
+  <h3>Exemples d’attributs</h3>
+    src=" " : donner la source (d’une image par exemple)<br>
+    &ltimg src="monimage.png" width="400" height="250" alt="image de chatons" /><br>href=" " : donner la destination d’un lien <br>&lta href="http://www.google.fr"> Texte du lien &lt/a>
+</div>
+  </div>  
+ <h2 id="structure">Doctype, html, body : structure d'un document</h2>
+ <div class="con">
+   <div class="p1">
+  <h3>Structure d’un document HTML simplifié</h3>
+
+   <h3>La balise <html></h3>
+   <p>
+    •Tout document HTML commence par la balise <html> qui se ferme en fin de document : </html> 
+    <br>
+    <!-- •La balise <html> contient nécessairement deux balises définissant l'entête (<head>) et le corps (<body>) du document -->
+   </p>
+   <h3>L'attribut lang</h3>
+<p>Permet de spécifier la langue de traitement du document global <br>
+    –Indexation dans la bonne langue par les moteurs de recherche–Synthèse vocale <br>
+     –Vérification orthographique des formulaires</p>
+ 
+   <h3>La balise &lthead></h3>
+   <p>•Détermine l’entête du document et contient les méta-informations La balise &lthead></p>
+   <h3>La balise &lttitle></h3>
+   <p>On y trouve la balise &lttitle> qui sera le titre du document <br>
+    –Sert en référencement (repris dans les résultats de recherche)<br>
+    Affichée dans l’onglet du navigateur
+   </p>
+   <h3>les balises meta </h3>
+   <p>•On y ajoutera également les appels pour les feuilles de style CSS et certains JavaScripts <br>
+    •On peut y trouver des balises « meta » parmi lesquelles   –&ltmeta charset="UTF-8"/> : permet de définir l’encodage de caractère de la page (à mettre directement sous le &lthead>)</p>
+    <br>&ltmeta name="description" content="description pour le référencement"/> affiché dans les résultats de recherche La balise <head> : les balises meta
+   <h3>La balise &ltbody></h3>
+   <p>Délimite le contenu de la page  <br>Le contenu est constitué de texte, images et autres éléments qui seront affichés</p>
+    </div>
+    </div>
+    
+  <h2 id="contenu">Les éléments de structuration du contenu</h2>
+   <div class="con">
+     <div class="p1">
+    <h3>La balise « division » &ltdiv>
+    </h3>
+       <ul>
+      <li>&ltdiv> est un conteneur</li>
+      <li>Cette balise n’a aucune valeur sémantique (aucun « sens ») </li>
+      <li>Élément de type bloc qui peut inclure n’importe quel autre balise HTML </li>
+      <li>Suivi d’un passage à la ligne</li>
+      <li>Permet de regrouper d’autres blocs de HTML (paragraphes, tableaux, etc.) et de leur donner un style CSS commun</li>
+    </ul>
+    <h3>La balise paragraphe &ltp>   </h3>
+     <ul>
+      <li>Les paragraphes sont des éléments de type « bloc », suivis d’un passage à la ligne et d'une marge par défaut</li>
+      <li>On peut imbriquer un paragraphe dans un div</li>
+      <li>On ne doit PAS mettre un paragraphe dans un paragraphe</li>
+    </ul>
+      <h3>Les titres h2 – h4
+    </h3>
+    <ul>
+     <li>Il existe six niveaux de titre &lth2> &lth3> &lth3> &lth4>&lth4> et &lth4> (pas un de plus ! )</li>
+     <li>Un nouveau niveau provoque un passage à la ligne, les éléments de titre étant des éléments de bloc.</li>
+     <li>La hiérarchisation visuelle est automatique (peut être modifiée via CSS)</li>
+     <li>Il est possible d’avoir plusieurs titres de même niveau</li>
+     <li>On ne peut pas mettre un Hn dans un p, ou un p dans un Hn</li>
+    </ul>
+    </div>
+  </div>
+       <div class="titre">
+      <h1 id="mise">Les éléments de « mise en forme » de texte</h1>
+      <img src="../img/Hand coding-amico (1).svg" alt="image">
+       </div>
+<h2 id="mise">Les éléments de « mise en forme » de texte</h2>
+     <div class="con">
+       <div class="p1">
+    <h3>Éléments en ligne « inline »  </h3>
+    <ul>
+    <li>Ces éléments sont des éléments dit « inline »</li>
+    <li>On les place autour du contenu (et du texte)</li>
+    <li>Ne crée pas de retour à la ligne</li>
+    <li>Servent à donner du sens aux parties du texte/contenu</li>
+  </ul>
+    <h3>L’ élément &ltstrong>    </h3>
+    <ul>
+    <li>&ltstrong> élément sémantique qui marque du texte comme comme fortement mis en valeur</li>
+  <li>« en gras » par défaut dans les navigateurs</li>
+   </ul>
+    <h3>L’ élément &ltem></h3>
+     <ul>
+     <li> balise sémantique qui marque du texte comme en emphase (mis en évidence) sert à « insister » sur une partie du texte</li>
+     <li>en « italique» par défau</li>
+    </ul>
+     <h3>L’ élément &ltspan></h3>
+     <ul>
+     <li>Un élément « générique » structurant de type « inline »</li>
+     <li>Permet de styler facilement des morceaux de texte en CSS</li>
+     <li>Par défaut affiche son contenu sans le modifier</li>
+     <li>Aucune valeur sémantique</li>
+     <li>(l’équivalent d’un div, en ligne)</li>
+    </ul>
+     <h3>D’autres éléments</h3>
+     <ul>
+     <li>L'élément &ltsup> permet d’afficher un texte exposan</li>
+     <li>L'élément &ltsub> permet d’afficher un texte en indice</li>
+    </ul>
+    </div>
+    </div>
+    
+  <h2 id="lien">Les liens dans les documents HTML</h2>   
+     <div class="con">
+       <div class="p1">
+       <h3>Fonction d'un lien</h3>
+       <ul>
+      <li>Le lien est un élément cliquable qui renvoie l’utilisateur sur une nouvelle page (ou lui permet de télécharger un fichier)</li>
+      <li>Il est souvent stylé différemment (bleu souligné par défaut) </li>
+      <li>Il peut renvoyer :  
+        –vers un autre site (lien externe) <br>
+        –vers une autre page du site (lien interne)<br>
+        –vers des fichiers (image, .PDF, etc.)Fonction d'un lien<br>
+      </li>
+      </ul>
+      <h3>La balise &lta></h3>
+      <ul>
+      <li>On appelle « ancre de lien » le texte à l’intérieur de la balise</li>
+      <li>On ajoute l’attribut href="cible_du_lien" pour indiquer vers quelle page on veut envoyer l’utilisateur</li>
+      <li>On peut ajouter l’attribut title="titre du lien" pour ajouter une infobulle au survol et indiquer à l’utilisateur où il va arriver</li>
+        </ul>
+        <br>
+      <p>&lta href="index.html" title="titre"> Ancre du lien&lt/a></p>
+      <h3>Lien externe vers un autre site</h3>
+      <ul>
+        <li>La cible sera l’url (ou adresse) complète du site, http:// compris</li>
+        <li>Il s’agit d’un lien absolu car on indique l’adresse complète</li>
+      </ul>
+         <br>
+         <p>&lta href="http://www.google.fr" title="Moteur de recherche google"> lien externe vers google &lt/a>
+         </p>
+       </div>
+       <div class="p1">
+        <h3>Liens vers un autre répertoire</h3>
+        <ul>
+        <li>On peut avoir des répertoires et sous-répertoires</li>
+        <li>On ajoute le nom du répertoire pour descendre : monrepertoire/mapage.html </li>
+        <li>On ajoute ../ pour remonter si on se trouve dans un sous répertoire : ../index.html</li>
+        </ul>
+        <br>
+        <h3>Ouvrir un lien dans un nouvel onglet</h3>
+        <ul>
+          <li>L’attribut target="_blank" permet d’ouvrir un lien dans une nouvelle
+            fenêtre/onglet en fonction du navigateur<br> &lta href="index.html" target="_blank" > 
+          </li>
+        </ul>
+        <h3>Des liens « internes » ou ancres internes</h3>
+        <ul>
+          <li>Comme dans Word, permet de renvoyer l’utilisateur à l’intérieur
+            d’une page</li>
+          <li>La cible est définie par un id="ancre_du_lien"</li>
+          <li>On utilise<span>&lta href="#ancre_du_lien"></span> pour créer le lien</li>
+          <li>Utilisé pour les liens « retour en haut de page », wikipedia, etc</li>
+          <li>L’ancre apparaît dans l’url :</li>
+        </ul>
+       <h3>Un lien vers une adresse mail</h3>
+       <ul>
+         <li>&lta href="mailto:monmail@gmail.com"> permet
+          de créer un lien qui ouvrira automatiquement le
+          client mail de la personne (à éviter car mail en
+          dur donc récupérable pour spam => formulaire
+          de contact )</li>
+         <li> &lta href="tel:13371337"> : permet de définir un
+          numéro de téléphone à appeler</li>
+       </ul>
+       </div>
+       </div>
+      </div>
+      <div class="titre">
+        <h1>les listes ,les tableaux,les formulaires</h1>
+        <img src="../img/Coding workshop-pana.svg" alt="codehtml">
+      </div>
+    <h2 id="liste">Les éléments de liste</h2>   
+     <div class="con">
+       <div class="p1">
+       <h3>Les listes non ordonnées &ltul></h3>
+        <ul>
+          <li>La balise &ltul> permet de créer une liste non ordonnée (unordered
+            list). Il faut l’ouvrir en début de liste et la fermer après le dernier
+            élément de la liste</li>
+          <li>La balise &ltli> permet de créer UN élément de la liste</li>
+        </ul>
+     
+         <h3>Les listes ordonnées &ltol></h3>
+          <ul>
+            <li>La balise <ol> permet de créer une liste ordonnée et numérotée 
+              (par défaut dans le navigateur). Il faut l’ouvrir en début de liste et la 
+              fermer après le dernier élément de la liste</li>
+            <li>La balise &ltli> permet de créer UN élément de la liste</li>
+          </ul>
+        
+          </div>
+          </div>
+      <h2 id="img">Ajouter des images avec la balise &ltimg></h2>
+      <div class="con">
+        <div class="p1">
+          <h3>La balise &ltimg></h3>
+          <ul>
+            <li>Balise de type inline : pas de retour à la ligne, peut-être insérée 
+              dans le corps du texte</li>
+            <li>Balise auto-fermante 
+              <span>&ltimg src="ref_image" alt="description de l’image" /></span></li>
+          </ul>
+          <h3>La balise &ltimg> et source de l'image</h3>
+          <ul>
+            <li>Un attribut src="image.jpg" pour donner le chemin vers la source 
+              de l’image <br>
+              – chemin sur le serveur <br>
+              – url de stockage <br>
+              – même principe que pour les liens</li>
+          </ul>
+           <h3>La balise &ltimg> et attribut « alt »</h3>
+           <ul>
+             <li>Un attribut <span>alt="description du contenu de l'image" </span> texte 
+              alternatif qui décrit le contenu de l’image et la remplace si l’image 
+              n’est pas téléchargée</li>
+           </ul>
+           </div>
+           </div>
+     <h2 id="tab">Les tableaux HTML</h2>
+       <div class="con">
+         <div class="p1">
+            <h3>Les tableaux, introduction</h3>
+          <ul>
+            <li>Un tableau sert à organiser des informations structurées sous forme 
+              tabulaire</li>
+            <li>Il se compose de lignes organisées elles-mêmes en cellules</li>
+          </ul>
+          <h3>Créer un tableau :&lttable></h3>
+            <ul>
+              <li> La balise &lttable>   permet d’indiquer le début et la fin du 
+                tableau</li>
+              <li>La balise &lttr> caractérise une nouvelle ligne</li>
+              <li>La balise &lttd> marque le contenu d’une cellule dans une ligne</li>
+              <li> Le nombre d'éléments &lttd> au sein des éléments &lttr> doit rester le 
+                même dans la mesure ou chaque ligne possède un même nombre de 
+                cellules, nombre qui correspond au nombre de colonnes du tableau</li>
+                
+                <h4>voir l'exemple</h4>
+            
+                
+                <li> &ltth> peut remplacer &lttd>
+                  pour créer une cellule 
+                  d’entête au tableau 
+                  Par défaut affiché en gras 
+                  et centré dans les 
+                  navigateurs</li>
+                  <li>On utilise &ltcaption> pour 
+                    donner un titre au tableau</li>
+                  <li> La balise se place au 
+                    début du tableau</li>
+                  <li>Il est possible de fusionner 
+                    certaines cellules entre elles avec 
+                    l’attribut colspan=" 
+                    nombredecellules" qui se place 
+                    sur la cellule (th ou td)</li>
+                    <li> La valeur numérique de cet 
+                      attribut précise le nombre de 
+                      colonnes du tableau que 
+                      couvre la cellule</li>
+                    <li>Il est possible de fusionner 
+                      des lignes avec l’attribut 
+                      rowspan=" 
+                      nombredelignes" qui se 
+                      place sur la cellule (th ou td)</li>
+            </ul>
+        
+            </div>
+            </div>
+          
+        
+        <h2 id="form">Les formulaires</h2>
+               <div class="con">
+                 <div class="p1">
+              <h3>La balise &ltform></h3>
+              <li>Balise principale du formulaire</li>
+              <li>Deux méthodes : <br> 
+                – method="get" : limitée à 255 caractères, informations passées dans la 
+                barre d’adresse <br>
+                – method="post" : envoie les données dans le corps de la requête sans 
+                passer par la barre d’adresse, c’est la méthode la plus utilisée</li>
+              <li>• Action : l’adresse du fichier ou programme qui va traiter les données </li>
+              <img src="../img/exp3.png" alt="texte">
+              <h3>La zone de texte monoligne &ltinput></h3>
+              <ul>
+               <li> La balise input est auto-fermante </li>
+               <li>Ne génère pas de retour à la ligne</li>
+               <li>Il faut lui donner un nom avec l’attribut « name » pour que l’on 
+                puisse récupérer sa valeur (éviter les espaces dans le name). Le 
+                nom n’est PAS visible sur la page</li>
+              </ul>
+              <h4>voir l'exemple</h4>
+              <img src="../img/input.png" alt="input">
+              <h3>Le label</h3>
+              <ul>
+              <li> Son rôle est de décrire à un être humain la fonction du champ 
+                (puisque name est invisible) </li>
+              <li> Ajouter un for="nom" au label </li>
+              <li> Ajouter id="nom" au champ</li>
+              </ul>
+              <h4>voir l'exemple</h4>
+              <img src="../img/label.png" alt="label">
+              <h3>Associer le label au champ</h3>
+              <ul>
+                <li>Permet à l’utilisateur de cliquer sur le label pour sélectionner le 
+                  champ (le for et l’id doivent être identiques mais peuvent être 
+                  différents du name)</li>
+                <li>Balise inline, pas de retour à la ligne</li>
+                
+              </ul>
+              <h4>voir l'exemple</h4>
+              <img src="../img/label2.png" alt="label">
+               <h3>L'attribut « value »</h3>
+               <ul>
+                 <li> value=" " : donne une valeur par défaut au champ</li>
+                 <li> Vide (ou inexistant) si on n'a pas de données récupérées dans la 
+                  base de donnée du site</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+              <img src="../img/value.png" alt="label">
+              <h3>En résumé pour n'importe quel champ il faut toujours au 
+                moins</h3>
+
+                <ul>
+                  <li>Un label (avec un for=" ") </li>
+                  <li> Un champ avec : <br> 
+                    – Un id (qui a la même valeur que le for) <br>
+                    – Un name pour entrer la valeur dans la base de donnée</li>
+                  <li>Facultatif : un attribut value (qui peut être vide) pour récupérer la 
+                    valeur dans la base de donnée</li>
+                </ul>
+                </div>
+                <div class="p1">
+                <h3>Les placeholder</h3>
+                <ul>
+                  <li>placeholder=" " : attribut HTML5, donne une indication de ce que devrait contenir le champ. 
+                    Attention, ne remplace PAS le label </li>
+                  <li>Pas supportés partout (IE10+) => ne PAS utiliser sans label visuel pour l'utilisateur (ou un polyfill)  </li>
+                </ul>
+                <h4>voir l'exemple</h4>
+              <img src="../img/placeholder.png" alt="placeholde">
+               <h3>Zone de texte multiligne &lttextarea></h3>
+               <ul>
+                 <li> Une balise qu’il faut ouvrir et fermer</li>
+                 <li> Pas de retour à la ligne automatique</li>
+                 <li>PAS de value= " ", le texte par défaut se met entre les deux balises 
+                  ouvrante et fermante</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+              <img src="../img/textarea.png" alt="textarea">
+              <h3>Les cases à cocher <input type="checkbox"></h3>
+              <ul>
+                <li>Une case = une option = un input</li>
+                <li> Plusieurs cases, toutes peuvent être cochées</li>
+                <li>Éléments inline</li>
+                <li>On peut pré-cocher une checkbox avec checked="checked" ou just checked</li>
+              </ul>
+              <h4>voir l'exemple</h4>
+              <img src="../img/checkbox.png" alt="checkbox">
+              <h3>Les boutons radio <input type="radio"></h3>
+               <ul>
+                 <li>Une case = une option = un input</li>
+                 <li>Un seul choix possible parmi tous les éléments </li>
+                 <li>Éléments inline</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+              <img src="../img/radio.png" alt="radio">
+              <h3>Les listes déroulantes &ltselect></h3>
+                <ul>
+                  <li>La liste se trouve entre les éléments &ltselect id="nomdeliste">&lt/select</li>
+                  <li>La balise &ltlabel for="nomdeliste"> permet de donner le nom de 
+                    la liste et est liée à &ltselect></li>
+                  <li>On crée un objet de la liste avec la balise &ltoption> Nom &lt/option></li>
+                  <li>L’attribut value permet de donner la valeur de l'option de la liste</li>
+                </ul>
+                <h4>voir l'exemple</h4>
+              <img src="../img/select.png" alt="select">
+              <h3>Bouton d’envoi input type="submit"</h3>
+               <ul>
+                 <li> Pour envoyer le formulaire on utilise input type="submit" 
+                </li>
+                 <li> L’attribut value=" " est obligatoire et permet de donner le « titre » du 
+                  bouton</li>
+                 <li>Le formulaire est envoyé pour traitement au fichier que l’on a défini 
+                  dans action=" "</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/submit.png" alt="submit">
+               <h3>Bouton de reset, input type="reset"</h3>
+               <ul>
+                 <li>Pour remettre à zéro toutes les données du formulaire on utilise 
+                  input type="reset"</li>
+                 <li> Merci de ne pas en abuser</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/reset.png" alt="reset">
+               <h3>Bouton &ltbutton type="button"></h3>
+               <ul>
+                 <li> Syntaxe différente de la balise input</li>
+                 <li>Possibilité d'ajouter des images à l'intérieur (balise non auto-fermante)</li>
+                 <li>Trois types : <br>
+                  – button : bouton cliquable (utilisable en JavaScript) <br>
+                  – reset : remettre à zéro le formulaire <br>
+                  – submit : envoyer le formulaire<br>
+                  </li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/button.png" alt="button">
+               <h3>Désactiver un champ "disabled"</h3>
+               <ul>
+                 
+                 <li> Note : on peut aussi juste mettre disabled en attribut </li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/disabled.png" alt="disabled">
+               <h3>Les champs de mot de passe &ltinput type="password"></h3>
+               <ul>
+                 <li> input type="password" : permet de masquer un mot de passe</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/pass.png" alt="pass">
+               <h3>Uploader un fichier : type = file</h3>
+               <ul>
+                 <li>Pour télécharger vers le serveur un fichier on utilise input 
+                  type="file"</li>
+                 <li>Si on envoie un fichier, il faut permettre au formulaire d’envoyer des 
+                  données avec l’attribut enctype="multipart/form-data" sur l’élément 
+                  form.</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/file.png" alt="file">
+               <h3>Cacher un champ type="hidden"</h3>
+               <ul>
+                 <li> On peut cacher un champ avec input type="hidden" </li>
+                 <li>Permet d’envoyer des données sans que l’utilisateur ne doive les 
+                  remplir ou ne les voie.</li>
+               </ul>
+               <h4>voir l'exemple</h4>
+               <img src="../img/hidden.png" alt="hidden">
+
+              </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</section>
+           <!-- footer section starts  -->
+
+           <section class="footer">
+
+            <div class="box-container">
+          
+               <div class="box">
+                   <h3>Les Developpeurs Web</h3>
+                  <p>un métier en perpétuel évolution, un manque de développeur web, un marché grandissant, un statut privilégier (CDI ou freelance), un bon salaire et la possibilité de le devenir sans diplôme particulier.
+                     .</p>
+                  <div class="share">
+                     <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                     <a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                     <a href="https://www.instagram.com/?hl=fr" class="fab fa-instagram"></a>
+                     <a href="https://fr.linkedin.com/" class="fab fa-linkedin"></a>
+                  </div>
+               </div>
+          
+               <div class="box">
+                  <h3>Lien-Rapide</h3>
+                  <a href="home.html" class="link">home</a>
+                  <a href="pages/html.html" class="link">Html</a>
+                  <a href="pages/css.html" class="link">Css</a>
+                  <a href="pages/java.html" class="link">JavaScript</a>
+                
+                  <a href="contact.html" class="link">contact</a>
+               </div>
+          
+               <div class="box">
+                  <h3> Lien-utile </h3>
+                  <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="link">Documentation javaScript</a>
+                  <a href="https://developer.mozilla.org/fr/docs/Web/Css" class="link">Documentation Css</a>
+                  <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="link">Documentation Html</a>
+                 
+               </div>
+          
+               <div class="box">
+                  <h3>Vos-Questions</h3>
+                  <p>s'inscrire</p>
+                  <form action="">
+                     <input type="email" name="" placeholder="entrer ton email" id="" class="email">
+                     <input type="submit" value="inscrire" class="btn">
+                  </form>
+               </div>
+          
+            </div>
+          
+   <div class="credit">  © Copyright-2022</div>
+          
+          </section>
+          
+          
+          <!-- footer section ends -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

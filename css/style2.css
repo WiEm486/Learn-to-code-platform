@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+html {
+  font-size: 62.5%;
+
+}
+
+
+.heading-link{
+padding:1rem;
+background: url(../img/depositphotos_84581442-stock-illustration-small-flower-pattern.jpg);
+background-position: bottom;
+  font-family: Alexanna;
+text-align: center;
+}
+.heading-link h1{
+font-size: 3em;
+}
+
+
+.header  {
+  display: flex;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+  font-weight: bolder;
+  background: #fff;
+
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 10%;
+
+}
+header img{
+  height: 5%;
+  width: 4%;
+  padding-right: 4em;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #618007;
+  background: #f0fdfa;
+  color: #618007;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: #618007;
+  color: #fff;
+}
+
+
+.css-nav{
+  padding: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  background-color: lightcoral;
+}
+.javascript-nav{
+  padding: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  background-color: lightcoral;
+}
+.html-nav{
+  padding: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  background-color: lightcoral;
+}
+.contactt{
+   padding: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  background-color: lightcoral;
+}
+
+
+
+.header .navbar a {
+margin-right: 2rem;
+  font-size: 2rem;
+
+  color: #444;
+}
+
+.header .navbar a:hover {
+  color: #618007;
+}
+
+
+.header .icons div:hover {
+  color: #618007;
+}
+
+a{
+text-decoration: none;
+color:black;
+font-size: 2em;
+font-family:  Klik-light;;
+}
+.titre{
+  margin:2rem;
+display: flex;
+
+
+font-family: Klik-light;
+font-size: xx-large;
+
+
+}
+ img {
+  width:50%;
+}
+.titre img{
+  flex:1;
+  width:40vw;
+}
+.titre h1{
+  
+  padding :1em;
+  padding-top: 5em;
+  font-size:1.5em;
+
+  border-top:6px solid #E31E5D;
+  border-left:6px solid #E31E5D;
+ flex:2;
+}
+
+h2{
+  margin:5rem;
+  text-align: center;
+  font-size:5em;
+  font-family: Heart Blues;
+  color:#618007;
+  border-left:12px solid #E31E5D;
+  border-right:12px solid #E31E5D;
+}
+.con{
+  display:flex;
+}
+.p1{
+  font-size: 2em;
+  margin:4rem;
+  border: 3px solid #E31E5D;
+
+  border-radius: 10px;
+  font-family: Klik-light;
+}
+.p1 h3{
+  font-size: 25px;
+text-decoration: underline;
+
+}
+.p1 img{
+  
+  width: 80%;
+}
+.footer{
+  font-family: Klik-light;
+  padding:5rem 10%;
+}
+.footer {
+  background: #f0fdfa;
+}
+
+.footer .box-container {
+
+  display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: #618007;
+}
+
+.footer .box-container .box .share {
+  margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: #618007;
+  color: #fff;
+  margin-right: .3rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: #444;
+}
+
+.footer .box-container .box .link {
+  font-size: 1.7rem;
+  line-height: 2;
+  color: #777;
+  padding: .5rem 0;
+  display: block;
+}
+
+.footer .box-container .box .link:hover {
+  color: #618007;
+  text-decoration: underline;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #618007;
+  margin-bottom: 1rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  border-top: 0.1rem solid #618007;
+}
+
+.footer .credit span {
+  color: #618007;
+}
+
+@media (max-width: 991px)
+{
+.footer {
+    padding: 3rem 2rem;
+}
+}
+@media (max-width: 687px)
+{
+.con{
+  flex-direction: column;
+}
+.titre h1{
+  font-size: 1em;
+}
+}
+@media (max-width: 768px) {
+  
+ 
+  .header .navbar.active {
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    right: 0;
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    border:2px solid lightcoral;
+  }
+  .navbar{
+    flex:1;
+  }
+  .home .contenuH .content h3 {
+    font-size: 3rem;
+  }
+}
